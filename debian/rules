@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_auto_install:
+	dh_auto_install
+	$(RM) debian/ruby-term-ansicolor/usr/bin/cdiff
+	$(RM) debian/ruby-term-ansicolor/usr/bin/colortab
+	$(RM) debian/ruby-term-ansicolor/usr/bin/term_*
+
+override_dh_installexamples:
+	dh_installexamples
+	chmod -x debian/ruby-term-ansicolor/usr/share/doc/ruby-term-ansicolor/examples/example.rb

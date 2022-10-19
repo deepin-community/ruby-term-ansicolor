@@ -1,0 +1,4 @@
+examples/example.rb
+bin/cdiff
+bin/colortab
+bin/term_*

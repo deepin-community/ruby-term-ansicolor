@@ -1,0 +1,24 @@
+Source: ruby-term-ansicolor
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Ben Armstrong <synrg@sanctuary.nslug.ns.ca>, Antonio Terceiro <terceiro@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-term-ansicolor.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-term-ansicolor.git;a=summary
+Homepage: http://flori.github.com/term-ansicolor
+XS-Ruby-Versions: all
+
+Package: ruby-term-ansicolor
+Architecture: all
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ruby-tins
+Description: Ruby library that colors strings using ANSI escape sequences
+ Small Ruby library that colors strings using ANSI escape sequences.
+ It's possible to use constants or unary functions. Block-forms
+ also autoreset at the block's end. It's also possible to use this
+ module as a mixin for classes of objects that respond to :to_str,
+ e.g. String.
+ .
+ This package is part of the Ruby library extras, a supplement to Ruby's
+ standard library.

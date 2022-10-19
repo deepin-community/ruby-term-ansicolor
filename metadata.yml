@@ -1,0 +1,145 @@
+--- !ruby/object:Gem::Specification
+name: term-ansicolor
+version: !ruby/object:Gem::Version
+  version: 1.3.0
+platform: ruby
+authors:
+- Florian Frank
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2014-02-06 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: gem_hadar
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 1.0.0
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 1.0.0
+- !ruby/object:Gem::Dependency
+  name: simplecov
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: tins
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+description: This library uses ANSI escape sequences to control the attributes of
+  terminal output
+email: flori@ping.de
+executables:
+- cdiff
+- decolor
+- colortab
+- term_mandel
+- term_display
+extensions: []
+extra_rdoc_files:
+- README.rdoc
+- lib/term/ansicolor.rb
+- lib/term/ansicolor/attribute.rb
+- lib/term/ansicolor/ppm_reader.rb
+- lib/term/ansicolor/rgb_color_metrics.rb
+- lib/term/ansicolor/rgb_triple.rb
+- lib/term/ansicolor/version.rb
+files:
+- ".gitignore"
+- ".travis.yml"
+- CHANGES
+- COPYING
+- Gemfile
+- README.rdoc
+- Rakefile
+- VERSION
+- bin/cdiff
+- bin/colortab
+- bin/decolor
+- bin/term_display
+- bin/term_mandel
+- examples/ColorTest.gif
+- examples/Mona_Lisa.jpg
+- examples/Stilleben.jpg
+- examples/example.rb
+- examples/lambda-red-plain.ppm
+- examples/lambda-red.png
+- examples/lambda-red.ppm
+- examples/pacman.jpg
+- examples/smiley.png
+- examples/wool.jpg
+- lib/term/ansicolor.rb
+- lib/term/ansicolor/.keep
+- lib/term/ansicolor/attribute.rb
+- lib/term/ansicolor/ppm_reader.rb
+- lib/term/ansicolor/rgb_color_metrics.rb
+- lib/term/ansicolor/rgb_triple.rb
+- lib/term/ansicolor/version.rb
+- term-ansicolor.gemspec
+- tests/ansicolor_test.rb
+- tests/attribute_test.rb
+- tests/ppm_reader_test.rb
+- tests/rgb_color_metrics_test.rb
+- tests/rgb_triple_test.rb
+- tests/test_helper.rb
+homepage: http://flori.github.com/term-ansicolor
+licenses:
+- GPL-2
+metadata: {}
+post_install_message: 
+rdoc_options:
+- "--title"
+- Term-ansicolor - Ruby library that colors strings using ANSI escape sequences
+- "--main"
+- README.rdoc
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.2.2
+signing_key: 
+specification_version: 4
+summary: Ruby library that colors strings using ANSI escape sequences
+test_files:
+- tests/ansicolor_test.rb
+- tests/attribute_test.rb
+- tests/ppm_reader_test.rb
+- tests/rgb_color_metrics_test.rb
+- tests/rgb_triple_test.rb
+- tests/test_helper.rb
